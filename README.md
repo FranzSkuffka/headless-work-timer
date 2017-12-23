@@ -2,6 +2,8 @@
 A work timer component with zero dependencies and no view layer.
 Defaults to Pomodoro intervals.
 
+[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
 ## Installation
 ```sh
 npm install --save headless-work-timer
