@@ -1,19 +1,20 @@
-# headless-pomodoro
-A (pomodoro technique)[https://en.wikipedia.org/wiki/Pomodoro_Technique] timer component with zero dependencies and no view layer.
+# headless-work-timer
+A work timer component with zero dependencies and no view layer.
+Defaults to Pomodoro intervals.
 
 ## Installation
 ```sh
-npm install --save headless-pomodoro
+npm install --save headless-work-timer
 ```
 
 ## Usage
 ```js
-const timer = require('headless-pomodoro')
+const timer = require('headless-work-timer')
 
 const DEFAULT_STATE = {
   phase: 'work',
   second: 0, // current second
-  streak: 0 // start with first pomodoro interval
+  streak: 0 // start with first work interval
 }
 
 const DEFAULT_SETTINGS = timer.createSettings(25)(25)(15)(5)

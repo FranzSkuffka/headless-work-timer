@@ -1,8 +1,4 @@
-// A headless pomodoro timer component
-// Usage:
-// import timer from 'headless-pomodoro'
-// callback = (state, settings) => console.log(state, settings)
-// timer()()(callback)
+// A headless work timer component
 
 // Type constructor for settings
 const createSettings = workDurationInMinutes => breakDurationInMinutes => longBreakDurationInMinutes => longBreakAfter => ({
@@ -15,7 +11,7 @@ const createSettings = workDurationInMinutes => breakDurationInMinutes => longBr
 const DEFAULT_STATE = {
   phase: 'work',
   second: 0, // current second
-  streak: 0 // start with first pomodoro interval
+  streak: 0 // start with first work interval
 }
 
 const DEFAULT_SETTINGS = createSettings(25)(25)(15)(5)
