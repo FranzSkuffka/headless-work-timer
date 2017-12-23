@@ -1,0 +1,16 @@
+{
+  "name": "headless-pomodoro",
+  "version": "0.0.1",
+  "description": "A headless pomodoro timer. No dependencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jan Wirth <contact@jan-wirth.de>",
+  "license": "MIT",
+  "keywords": [
+    "headless",
+    "pomodoro",
+    "timer"
+  ]
+}
