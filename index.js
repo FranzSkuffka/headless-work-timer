@@ -14,7 +14,7 @@ const DEFAULT_STATE = {
   streak: 0 // start with first work interval
 }
 
-const DEFAULT_SETTINGS = createSettings(25)(25)(15)(5)
+const DEFAULT_SETTINGS = createSettings(25)(5)(15)(5)
 
 const calculateBreakType = settings => state => {
   const hasWorkedAtAll = state.streak > 0
