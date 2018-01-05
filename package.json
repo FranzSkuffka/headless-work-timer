@@ -1,6 +1,6 @@
 {
   "name": "headless-work-timer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A headless work timer. Defaults to Pomodoro intervals. No dependencies",
   "main": "index.js",
   "scripts": {
