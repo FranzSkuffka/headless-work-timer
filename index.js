@@ -1,3 +1,5 @@
+const interval = require('./interval')
+
 // A headless work timer component
 
 // Type constructor for settings
@@ -56,15 +58,18 @@ const timer = (settings = DEFAULT_SETTINGS) => (state = DEFAULT_STATE) => callba
     console.error('callback MUST be a function')
   }
 
-  // start the timer
-  const ticker = setInterval(() => {
+  const tick = () => {
     const stateUpdate = update(settings)(currentState)
     currentState = stateUpdate[0]
     callback(currentState, stateUpdate[1], settings)
-  }, 1000)
+  }
+
+  // start the timer
+  const ticker = new interval({ duration: 1000, callback: tick })
+  ticker.run()
 
   // allow user to stop the timer
-  return () => clearInterval(ticker)
+  return ticker
 }
 
 module.exports = timer
